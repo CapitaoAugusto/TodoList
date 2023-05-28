@@ -86,16 +86,39 @@
 /*RESPONSIVIDADE DESKTOP*/
 @media only screen and (min-width: 1025px) and (max-width: 1920px) and (min-height: 600px) and (max-height: 1200px) {
     .container_show {
-      min-width: 200px;
-      right: 10%;
-    }
-  
-    
-    .success {
-      padding: 12px;
+        min-width: 200px;
+        right: 10%;
     }
 
-    .danger{
+
+    .success {
         padding: 12px;
     }
-  }
+
+    .danger {
+        padding: 12px;
+    }
+}
+
+/*RESPONSIVIDADE TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1536px) {
+    .container_show {
+        min-width: 200px;
+        right: 10%;
+        margin-top: -26px;
+        margin-right: -20px;
+    }
+
+
+    .success {
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+
+    .danger {
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+}
