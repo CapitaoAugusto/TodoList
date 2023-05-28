@@ -167,3 +167,75 @@
     line-height: 10px;
   }
 }
+
+/*RESPONSIVIDADE MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 767px) and (min-height: 480px) and (max-height: 1024px) {
+  .section-container {
+    min-height: 100vh;
+    padding-bottom: 5vh;
+    max-height: max-content;
+    width: 114%;
+  }
+
+
+  .input {
+    width: 243px;
+    height: 37px;
+  }
+
+  .input_container {
+    display: flex;
+    gap: 8px;
+    width: 100vw;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -21px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 37px;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    filter: brightness(1.25);
+  }
+
+  .button:disabled {
+    filter: grayscale(100%);
+    cursor: auto;
+  }
+
+
+  .content_header {
+    margin: 20px 0 12px;
+  }
+
+  .tasks_container {
+    gap: 2px;
+  }
+
+  .task_done{
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .task_created {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .span_value {
+    padding: 1px 3px;
+    font-size: 6px;
+    line-height: 8px;
+  }
+}
