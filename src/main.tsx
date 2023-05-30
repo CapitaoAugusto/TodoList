@@ -8,13 +8,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import NotFound from './components/NotFound/index.tsx';
+import { LandingPage } from './components/LandingPage/index.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <LandingPage />,
     errorElement: <NotFound />
   },
+  {
+    path: "/to-do",
+    element: <App />,
+    errorElement: <NotFound/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

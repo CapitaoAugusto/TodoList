@@ -1,0 +1,88 @@
+.sectionPrincipal {
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    background-color: var(--blue-dark);
+    display: flex;
+    flex-direction: column;
+}
+
+.textoPrincipal {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 144px;
+    color: var(--white);
+    margin-left: 240px;
+    margin-top: 170px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.img {
+    width: 80%;
+    margin-left: 125px;
+}
+
+/*RESPONSIVIDADE DESKTOP*/
+@media only screen and (min-width: 1025px) and (max-width: 1920px) and (min-height: 600px) and (max-height: 1200px) {
+    .sectionPrincipal {
+        align-items: flex-start;
+    }
+
+    .textoPrincipal {
+        font-size: 144px;
+        line-height: 113px;
+        margin-left: 120px;
+        margin-top: 170px;
+    }
+}
+
+/*RESPONSIVIDADE TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1536px) {
+    .sectionPrincipal {
+        align-items: flex-start;
+        justify-content: end;
+    }
+
+    .textoPrincipal {
+        font-size: 96px;
+        line-height: 96px;
+        position: absolute;
+        margin-left: 94px;
+        margin-top: 148px;
+    }
+
+    .img {
+        width: 79%;
+        margin-left: 100px;
+        height: 64vh;
+        margin-top: 268px;
+    }
+}
+
+/*RESPONSIVIDADE MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 767px) and (min-height: 480px) and (max-height: 1024px) {
+    .sectionPrincipal {
+        align-items: center;
+        justify-content: end;
+        gap: 93px;
+    }
+
+    .textoPrincipal {
+        font-size: 48px;
+        line-height: 48px;
+        margin-left: 0;
+        margin-top: 69px;
+        text-align: center;
+    }
+
+    .img {
+
+        margin-left: 0;
+        height: 40vh;
+        margin-top: 30px;
+    }
+}
