@@ -49,7 +49,7 @@ export const Content = () => {
 
 
     api.post("tasks", newTask)
-      .then((response) => setTasksListState((currentValue) => [...currentValue, newTask]))
+      .then(() => setTasksListState((currentValue) => [...currentValue, newTask]))
       .finally(() => setDescription(''))
     showToast({
       message: "Tarefa Adicionada com sucesso",
